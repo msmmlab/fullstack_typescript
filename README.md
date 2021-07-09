@@ -1,1 +1,1 @@
-- Full stack project (Node, Typesrcipt, GraphQL, PostgreSQL)
+- Full stack project (Node, React, Typesrcipt, GraphQL, PostgreSQL)

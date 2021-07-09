@@ -1,0 +1,1 @@
+- Full stack project (Node, Typescipt, GraphQL, PostgreSQL)

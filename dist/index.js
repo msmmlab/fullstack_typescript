@@ -33,7 +33,7 @@ const main = () => __awaiter(void 0, void 0, void 0, function* () {
     });
     apolloServer.applyMiddleware({ app });
     app.get("/", (_, res) => {
-        res.status(200).send("Hello");
+        res.status(200).send("Full Stack Typescript");
     });
     app.listen(3030, () => {
         console.log("Server running on PORT:3030");

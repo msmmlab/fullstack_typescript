@@ -24,13 +24,13 @@ const main = async () => {
       resolvers: [HelloResolver, PostResolver],
       validate: false,
     }),
-    context: () => ({ em: orm.em }),
+    context: () => ({ em: orm.em }), //graphql gets access to orm
   });
 
   apolloServer.applyMiddleware({ app });
 
   app.get("/", (_, res) => {
-    res.status(200).send("Hello");
+    res.status(200).send("Full Stack Typescript");
   });
 
   app.listen(3030, () => {

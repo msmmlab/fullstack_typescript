@@ -10,7 +10,11 @@ import { PostResolver } from "./resolvers/post";
 
 const main = async () => {
   const orm = await MikroORM.init(mikroConfig);
+  // run migrations
   await orm.getMigrator().up();
+  // sample post creation
+  // const post = orm.em.create(Post, {title: "New post"})
+  // orm.em.persistAndFlush(post);
 
   const app = express();
 
